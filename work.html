@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Portfolio | Work</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Note: In Vite dev, main.js imports css, but for MPA structure clarity we link it or let the JS handle/import it. 
+         Ideally each HTML entry point needs its own module script. -->
+</head>
+
+<body>
+    <div id="cursor-follower"></div>
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html"><img src="logo.png" alt="Portfolio Logo" class="nav-logo"></a></div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="work.html" class="active">Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <section class="page-header">
+            <h1>Selected Projects</h1>
+            <p>A collection of advertising campaigns, UI designs, and editorial work.</p>
+        </section>
+
+        <section class="work-section">
+            <div class="container">
+                <div id="full-work-grid" class="project-grid">
+                    <!-- Dynamically populated -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <img src="logo.png" alt="Logo" class="footer-logo">
+                <p class="footer-tagline">Visual Design & Advertising Portfolio</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="work.html">Work</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-socials">
+                    <a href="https://www.behance.net/aadityakashyap5">Behance</a>
+                    <a href="https://www.linkedin.com/in/aaditya-kashyap-3082732a0/">LinkedIn</a>
+                </div>
+                <p class="copyright">&copy; 2026 Aaditya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data-standalone.js"></script>
+    <script src="main-standalone.js"></script>
+</body>
+
+</html>
